@@ -56,7 +56,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
        hover */
     .ContentSelected,
     .OutlineHover {
-      border-color: transparent;
+      border-color: transparent !important;
     }
 
     /* Hide the bar on top of note containers and the triangular drag
