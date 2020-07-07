@@ -1,0 +1,114 @@
+/* OneBoard - full screen whiteboard with OneNote Online
+
+Copyright (C) 2020 Vincenzo Mantova <xworld21@users.sf.net>
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+*/
+
+/* ==UserStyle==
+@name           OneBoard
+@namespace      github.com/xworld21
+@version        0.1.0
+@description    Whiteboard skin for OneNote Online
+@author         Vincenzo Mantova <xworld21@users.sf.net>
+@homepageURL    https://github.com/xworld21/OneBoard
+@supportURL     https://github.com/xworld21/OneBoard/issues
+@updateURL      https://github.com/xworld21/OneBoard/raw/master/OneBoard.user.css
+@license        MIT
+@preprocessor   stylus
+@var checkbox hide-navigation "Hide navigation panel" 1
+@var checkbox hide-scrollbars "Hide scrollbars" 1
+@var checkbox presentation-mode "Presentation mode" 1
+@var checkbox prevent-scroll-x "Prevent horizontal scrolling (read warning)" 0
+==/UserStyle== */
+
+@-moz-document domain("ukc-onenote.officeapps.live.com") {
+  #AppHeaderPanel {
+    display: none;
+  }
+
+  if hide-navigation {
+    #applicationWACNavigationPanel {
+      display: none;
+    }
+  }
+
+  if presentation-mode {
+    /* Hide the ribbon */
+    #WACRibbonPanel {
+      /* Ribbon still visible if missing !important */
+      display: none !important;
+    }
+
+    /* Hide the border around note containers that appears on selection and
+       hover */
+    .ContentSelected,
+    .OutlineHover {
+      border-color: transparent;
+    }
+
+    /* Hide the bar on top of note containers and the triangular drag
+       handles */
+    .OutlineTitleArea,
+    .ShowDragHandle {
+      display: none;
+    }
+
+    /* Hide the insertion caret */
+    #WACViewPanel {
+      caret-color: transparent;
+    }
+
+    /* Hide selected text */
+    .Selected,
+    .Selected p,
+    .Selected p * {
+      background-color: transparent !important;
+    }
+    .Selected .EOP,
+    .EOP.Selected,
+    .LineBreakBlob.Selected,
+    .TabRun.Selected,
+    .TextRun .Selected {
+      border-color: transparent !important;
+    }
+
+    /* Set the cursor to a transparent led circle */
+    #WACViewPanel,
+    #WACViewPanel * {
+      cursor: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Ccircle cx='8' cy='8' r='7' fill='rgba(256,0,0,0.5)'/%3E%3C/svg%3E") 8 8, pointer !important;
+    }
+  }
+
+  if hide-scrollbars {
+    /* WebKit browsers */
+    #WACViewPanel::-webkit-scrollbar {
+      display: none;
+    }
+    /* Firefox */
+    #WACViewPanel {
+      scrollbar-width: none;
+    }
+  }
+
+  if prevent-scroll-x {
+    #WACViewPanel {
+      /* Not recommended yet - clicking on the page causes "programmatic"
+         scrolling. `overflow-x: clip` implements the desired behaviour, but it
+         is experimental and not supported yet by any browser.*/
+      overflow-x: hidden;
+    }
+  }
+}
