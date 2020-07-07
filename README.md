@@ -1,7 +1,7 @@
 # OneBoard
 > Full screen whiteboard with OneNote Online
 
-This is a minimal CSS hack that transforms OneNote Online into a full screen whiteboard with laser pointer. With the Split Screen bookmarklet below, you may also present OneNote as *two* sliding whiteboards.
+This is a minimal CSS hack that transforms OneNote Online into a full screen whiteboard with laser pointer. With the "Split Vertically" bookmarklet below, you may also present OneNote as *two* sliding whiteboards.
 
 The intended use case is to run OneBoard in "presentation mode", while you write and annotate your page on another window or another device. If you disable presentation mode, OneBoard will only hide the non-editing elements that take space on the screen. A few other settings are provided to tailor its behavior to your use case.
 
