@@ -3,7 +3,7 @@
 
 This is a minimal CSS hack that transforms OneNote Online into a full screen whiteboard with laser pointer. With the "Split Vertically" bookmarklet below, you may also present OneNote as *two* sliding whiteboards.
 
-<p style="text-align: center;">
+<p align="center">
   <img width="640" height="360" src="https://github.com/xworld21/OneBoard/raw/master/OneBoardDemo.gif">
 </p>
 
