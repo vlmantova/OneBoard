@@ -25,7 +25,7 @@ Install the [Stylus](https://github.com/openstyles/stylus) extension for your br
 
 To have two side-by-side sliding whiteboards, drag the following link to your bookmark bar
 
-<center><a href="javascript:(function(){var e=document,i=e.title;e.head.innerHTML=e.body.innerHTML="",e.title=i;var t=e.createElement("meta");t.name="viewport",t.content="width=device-width, height=device-height, initial-scale=1",e.head.appendChild(t);var d=e.querySelector("html").style,a=e.body,l=a.style;d.width=d.height=l.width=l.height="100%",l.margin=l.padding="0";var n=e.createElement("iframe");l.display="flex";var r=n.style;n.src=window.location,r.flex="0 0 50%",r.border="none",r.boxSizing="border-box";var o=n.cloneNode();r.borderRight="solid 2px black",o.style.borderLeft="solid 2px black",a.appendChild(n),a.appendChild(o)})();" title="Split Vertically">Split Vertically</a></center>
+<center><a href="javascript:void%20function(){javascript:(function(){var%20b=document,c=b.title;b.head.innerHTML=b.body.innerHTML=%22%22,b.title=c;var%20e=b.createElement(%22meta%22);e.name=%22viewport%22,e.content=%22width=device-width,%20height=device-height,%20initial-scale=1%22,b.head.appendChild(e);var%20f=b.querySelector(%22html%22).style,d=b.body,a=d.style;f.width=f.height=a.width=a.height=%22100%25%22,a.margin=a.padding=%220%22;var%20g=b.createElement(%22iframe%22);a.display=%22flex%22;var%20h=g.style;g.src=window.location,h.flex=%220%200%2050%25%22,h.border=%22none%22,h.boxSizing=%22border-box%22;var%20i=g.cloneNode();h.borderRight=%22solid%202px%20black%22,i.style.borderLeft=%22solid%202px%20black%22,d.appendChild(g),d.appendChild(i)})()}();" title="Split Vertically">Split Vertically</a></center>
 
 or create manually a bookmark called "Split Vertically" with the following URL:
 
