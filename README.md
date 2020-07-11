@@ -5,7 +5,7 @@
 This is a minimal CSS hack that transforms OneNote Online into a full screen whiteboard with laser pointer. With the "Split Vertically" bookmarklet below, you may also present OneNote as *two* sliding whiteboards.
 
 <p align="center">
-  <img width="640" height="360" src="https://github.com/xworld21/OneBoard/raw/master/OneBoardDemo.gif">
+  <img width="640" height="360" src="https://xworld21.github.io/OneBoard/OneBoardDemo.gif">
 </p>
 
 The intended use case is to run OneBoard in "Presentation mode", while you write and annotate your page on another window or another device. There are additional modes that let you work directly on the page but still maximise the content.
@@ -21,7 +21,7 @@ To report bugs or changes in behavior, request more servers, or suggest new func
 
 ## Installation
 
-Install the [Stylus](https://github.com/openstyles/stylus) extension for your browser (Chrome, the new Edge, Firefox, or Opera), then open the [stylesheet](https://github.com/xworld21/OneBoard/raw/master/OneBoard.user.css) and click on "Install". After installation, your OneNote pages will appear in presentation mode with no navigation panel and no scrollbars.
+Install the [Stylus](https://github.com/openstyles/stylus) extension for your browser (Chrome, the new Edge, Firefox, or Opera), then open the [stylesheet](https://xworld21.github.io/OneBoard/OneBoard.user.css) and click on "Install". After installation, your OneNote pages will appear in presentation mode with no navigation panel and no scrollbars.
 
 To have two side-by-side sliding whiteboards, drag the following link to your bookmark bar (the link is disabled when visiting the github repo – visit the <a href="https://xworld21.github.io/OneBoard">OneBoard</a> page to see the link)
 

@@ -23,9 +23,9 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 @version        0.2.0
 @description    Whiteboard skin for OneNote Online
 @author         Vincenzo Mantova <xworld21@users.sf.net>
-@homepageURL    https://github.com/xworld21/OneBoard
+@homepageURL    https://xworld21.github.io/OneBoard
 @supportURL     https://github.com/xworld21/OneBoard/issues
-@updateURL      https://github.com/xworld21/OneBoard/raw/master/OneBoard.user.css
+@updateURL      https://xworld21.github.io/OneBoard/OneBoard.user.css
 @license        MIT
 @preprocessor   stylus
 @var select mode "Mode" [ "presentation:Presentation", "draw:Draw", "type:Type", "normal:Normal" ]
