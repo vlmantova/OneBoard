@@ -23,7 +23,7 @@ To report bugs or changes in behavior, request more servers, or suggest new func
 
 Install the [Stylus](https://github.com/openstyles/stylus) extension for your browser (Chrome, the new Edge, Firefox, or Opera), then open the [stylesheet](https://github.com/xworld21/OneBoard/raw/master/OneBoard.user.css) and click on "Install". After installation, your OneNote pages will appear in presentation mode with no navigation panel and no scrollbars.
 
-To have two side-by-side sliding whiteboards, drag the following link to your bookmark bar
+To have two side-by-side sliding whiteboards, drag the following link to your bookmark bar (the link is disabled when visiting the github repo – visit the <a href="https://xworld21.github.io/OneBoard">OneBoard</a> page to see the link)
 
 <p align="center">
   <a style="display: block; text-align: center;" href="javascript:void%20function(){javascript:(function(){var%20b=document,c=b.title;b.head.innerHTML=b.body.innerHTML=%22%22,b.title=c;var%20e=b.createElement(%22meta%22);e.name=%22viewport%22,e.content=%22width=device-width,%20height=device-height,%20initial-scale=1%22,b.head.appendChild(e);var%20f=b.querySelector(%22html%22).style,d=b.body,a=d.style;f.width=f.height=a.width=a.height=%22100%25%22,a.margin=a.padding=%220%22;var%20g=b.createElement(%22iframe%22);a.display=%22flex%22;var%20h=g.style;g.src=window.location,h.flex=%220%200%2050%25%22,h.border=%22none%22,h.boxSizing=%22border-box%22;var%20i=g.cloneNode();h.borderRight=%22solid%202px%20black%22,i.style.borderLeft=%22solid%202px%20black%22,d.appendChild(g),d.appendChild(i)})()}();" title="Split Vertically">Split Vertically</a>
