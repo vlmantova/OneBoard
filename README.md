@@ -17,7 +17,7 @@ The intended use case is to run OneBoard in "presentation mode", while you write
 - OneNote notebooks are hosted on the servers `*-onenote.officeapps.live.com` (regardless of the actual URL appearing in your browser). For now, the CSS only works on the `ukc-onenote.officeapps.live.com` server.
 - The settings might change shape in the future. If you are not using the defaults, you should disable automatic updates for OneBoard in Stylus.
 
-To report bugs or changes in behavior, request more servers, or suggest new functionality please file an [issue](/xworld21/OneBoard/issues) or send a [pull request](/xworld21/OneBoard/pulls).
+To report bugs or changes in behavior, request more servers, or suggest new functionality please file an [issue](https://github.com/xworld21/OneBoard/issues) or send a [pull request](https://github.com/xworld21/OneBoard/pulls).
 
 ## Installation
 
@@ -35,7 +35,7 @@ or create manually a bookmark called "Split Vertically" with the following URL:
 javascript:(function(){var e=document,i=e.title;e.head.innerHTML=e.body.innerHTML="",e.title=i;var t=e.createElement("meta");t.name="viewport",t.content="width=device-width, height=device-height, initial-scale=1",e.head.appendChild(t);var d=e.querySelector("html").style,a=e.body,l=a.style;d.width=d.height=l.width=l.height="100%",l.margin=l.padding="0";var n=e.createElement("iframe");l.display="flex";var r=n.style;n.src=window.location,r.flex="0 0 50%",r.border="none",r.boxSizing="border-box";var o=n.cloneNode();r.borderRight="solid 2px black",o.style.borderLeft="solid 2px black",a.appendChild(n),a.appendChild(o)})();
 ```
 
-Clicking on the bookmark will split the page you are browsing into two vertical copies. You can inspect the source code of the above minified Javascript in [SplitVertically.js](SplitVertically.js).
+Clicking on the bookmark will split the page you are browsing into two vertical copies. You can inspect the source code of the above minified Javascript in [SplitVertically.js](https://github.com/xworld21/OneBoard/SplitVertically.js).
 
 ## Usage
 
@@ -70,4 +70,4 @@ There are further options to control other elements of the UI.
 
 ## License
 
-Distributed under the [GPL3 license](LICENSE). Copyright © 2020 Vincenzo Mantova <xworld21@users.sf.net>.
+Distributed under the [GPL3 license](https://github.com/xworld21/OneBoard/LICENSE). Copyright © 2020 Vincenzo Mantova <xworld21@users.sf.net>.
