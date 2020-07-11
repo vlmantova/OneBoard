@@ -20,7 +20,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 /* ==UserStyle==
 @name           OneBoard
 @namespace      github.com/xworld21
-@version        0.1.1
+@version        0.2
 @description    Whiteboard skin for OneNote Online
 @author         Vincenzo Mantova <xworld21@users.sf.net>
 @homepageURL    https://github.com/xworld21/OneBoard
@@ -28,9 +28,9 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 @updateURL      https://github.com/xworld21/OneBoard/raw/master/OneBoard.user.css
 @license        MIT
 @preprocessor   stylus
+@var select mode "Mode" [ "presentation:Presentation", "draw:Draw", "type:Type", "normal:Normal" ]
 @var checkbox hide-navigation "Hide navigation panel" 1
 @var checkbox hide-scrollbars "Hide scrollbars" 1
-@var checkbox presentation-mode "Presentation mode" 1
 @var checkbox prevent-scroll-x "Prevent horizontal scrolling (read warning)" 0
 ==/UserStyle== */
 
@@ -45,13 +45,22 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     }
   }
 
-  if presentation-mode {
+  if mode == presentation {
     /* Hide the ribbon */
     #WACRibbonPanel {
       /* Ribbon still visible if missing !important */
       display: none !important;
     }
 
+    /* Set the cursor to a transparent led circle */
+    #WACViewPanel,
+    #WACViewPanel * {
+      cursor: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Ccircle cx='8' cy='8' r='7' fill='rgba(256,0,0,0.5)'/%3E%3C/svg%3E") 8 8, pointer !important;
+      user-select: none;
+    }
+  }
+  
+  if mode == presentation or mode == draw {
     /* Hide the border around note containers that appears on selection and
        hover */
     .ContentSelected,
@@ -90,12 +99,11 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
       background-image: none !important;
       border-bottom: inherit !important;
     }
+  }
 
-    /* Set the cursor to a transparent led circle */
-    #WACViewPanel,
-    #WACViewPanel * {
-      cursor: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Ccircle cx='8' cy='8' r='7' fill='rgba(256,0,0,0.5)'/%3E%3C/svg%3E") 8 8, pointer !important;
-      user-select: none;
+  if mode == presentation or mode == draw or mode == type {
+    #WACRibbonPanel div[data-automation-type="RibbonTopBarContainer"] {
+      display: none !important;
     }
   }
 
