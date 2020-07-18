@@ -22,7 +22,7 @@ The intended use case is to run OneBoard in "Presentation mode", while you write
 
 ### Bugs and limitations
 
-- OneNote notebooks are hosted on the servers `*-onenote.officeapps.live.com` (regardless of the actual URL appearing in your browser). For now, the CSS only works on the `ukc-onenote.officeapps.live.com` server.
+- OneNote notebooks live inside an iframe with origin `*onenote.officeapps.live.com`. The current version of this UserCSS applies to iframes from the domains `onenote.officeapps.live.com` and `${region}-onenote.officeapps.live.com` for `${region}` in `euc,ukc,usc`.
 - The settings might change shape in the future. If you are not using the defaults, you should disable automatic updates for OneBoard in Stylus.
 
 To report bugs or changes in behavior, request more servers, or suggest new functionality please file an [issue](https://github.com/xworld21/OneBoard/issues) or send a [pull request](https://github.com/xworld21/OneBoard/pulls).

@@ -35,7 +35,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 @var checkbox prevent-scroll-x "Prevent horizontal scrolling (read warning)" 0
 ==/UserStyle== */
 
-@-moz-document domain("ukc-onenote.officeapps.live.com") {
+@-moz-document domain("onenote.officeapps.live.com"), domain("euc-onenote.officeapps.live.com"), domain("ukc-onenote.officeapps.live.com"), domain("usc-onenote.officeapps.live.com") {
   #AppHeaderPanel {
     display: none;
   }
