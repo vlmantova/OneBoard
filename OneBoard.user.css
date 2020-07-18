@@ -31,6 +31,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 @var select mode "Mode" [ "presentation:Presentation", "draw:Draw", "type:Type", "normal:Normal" ]
 @var checkbox hide-navigation "Hide navigation panel" 1
 @var checkbox hide-scrollbars "Hide scrollbars" 1
+@var range laser-size "Laser pointer size" [16, 4, 64, 4]
 @var checkbox prevent-scroll-x "Prevent horizontal scrolling (read warning)" 0
 ==/UserStyle== */
 
@@ -55,7 +56,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     /* Set the cursor to a transparent led circle */
     #WACViewPanel,
     #WACViewPanel * {
-      cursor: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Ccircle cx='8' cy='8' r='7' fill='rgba(256,0,0,0.5)'/%3E%3C/svg%3E") 8 8, pointer !important;
+      cursor: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg xmlns='http://www.w3.org/2000/svg' width='" + laser-size + "' height='" + laser-size + "'%3E%3Ccircle cx='" + (laser-size/2) + "' cy='" + (laser-size/2) + "' r='" + (laser-size/2 - 1) + "' fill='rgba(256,0,0,0.5)'/%3E%3C/svg%3E") (laser-size/2) (laser-size/2), pointer !important;
       user-select: none;
     }
   }

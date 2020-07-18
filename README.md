@@ -97,6 +97,8 @@ There are further options to control other elements of the UI.
   <dd>Permanently hide the left navigation panel. The panel can also be hidden manually via the "View" ribbon, but it reappears on window resize.</dd>
   <dt>Hide scrollbars (default: yes)</dt>
   <dd>Hide the scrollbars.</dd>
+  <dt>Laser pointer size (default: 16px)</dt>
+  <dd>Configure the laser pointer size. You may have to disable and reenable OneBoard for the option to take effect.</dd>
   <dt>Prevent horizontal scrolling (default: no)</dt>
   <dd>Prevent horizontal scrolling.<br>
     <strong>Warning.</strong> OneNote will scroll on its own when writing text near a border. This can easily happen by accident when clicking close to the border of the page, as it may create a note container that spans beyond the viewport. You may have trouble scrolling back when this option is enabled.</dd>
