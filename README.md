@@ -4,11 +4,17 @@
 
 This is a minimal CSS hack that transforms OneNote Online into a full screen whiteboard with laser pointer. With the "Split Vertically" bookmarklet below, you may also present OneNote as *two* sliding whiteboards.
 
-<p align="center">
-  <img width="640" height="360" src="https://xworld21.github.io/OneBoard/OneBoardDemo.gif">
-</p>
+<figure>
+  <img src="./demo/OneBoardDemo@540.gif" srcset="./demo/OneBoardDemo@540.gif, ./demo/OneBoardDemo@1080.gif 2x">
+  <figcaption>Presentation mode, split vertically</figcaption>
+</figure>
 
-The intended use case is to run OneBoard in "Presentation mode", while you write and annotate your page on another window or another device. There are additional modes that let you work directly on the page but still maximise the content.
+<figure>
+  <img src="./demo/OneBoardDemo-Disabled@540.png" srcset="./demo/OneBoardDemo-Disabled@540.png, ./demo/OneBoardDemo-Disabled@1080.png 2x">
+  <figcaption>Normal OneNote, with OneBoard disabled</figcaption>
+</figure>
+
+The intended use case is to run OneBoard in "Presentation mode", while you write and annotate your page on another window or another device. See below for additional modes that let you work directly on the page but still maximise the content.
 
 **BEWARE:** this is a hack that relies on ids and classes in the HTML delivered by Microsoft. Parts may break at any moment, although hopefully not very often.
 
@@ -41,7 +47,23 @@ Clicking on the bookmark will split the page you are browsing into two vertical 
 
 After installation, your OneNote pages will appear in Presentation mode. If you want two whiteboards side-by-side, click on the "Split Vertically" bookmark after the notebook is open on the desired page.
 
-To exit Presentation mode, click on the Stylus button in your browser toolbar and either disable OneBoard via the checkbox next to "iframe: OneBoard", or change its settings with the gear icon right of "iframe: OneBoard".
+To change mode, click on the Stylus button in your browser toolbar, open the OneBoard settings via the gear icon right of "iframe: OneBoard" and select a different mode.
+
+<figure>
+  <img src="./demo/OneBoardDemo-NormalMode@540.png" srcset="./demo/OneBoardDemo-NormalMode@540.png, ./demo/OneBoardDemo-NormalMode@1080.png 2x">
+  <figcaption>Normal mode</figcaption>
+</figure>
+
+<figure>
+  <img src="./demo/OneBoardDemo-TypeMode@540.png" srcset="./demo/OneBoardDemo-TypeMode@540.png, ./demo/OneBoardDemo-TypeMode@1080.png 2x">
+  <figcaption>Type mode</figcaption>
+</figure>
+
+<figure>
+  <img src="./demo/OneBoardDemo-DrawMode@540.png" srcset="./demo/OneBoardDemo-DrawMode@540.png, ./demo/OneBoardDemo-DrawMode@1080.png 2x">
+  <figcaption>Draw mode</figcaption>
+</figure>
+
 
 ## Settings
 
