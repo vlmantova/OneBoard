@@ -70,6 +70,12 @@ To change mode, click on the Stylus button in your browser toolbar, open the One
   <figcaption>Draw mode</figcaption>
 </figure>
 
+---
+
+<figure>
+  <img src="./demo/OneBoardDemo-DrawModeSplit@540.png" srcset="./demo/OneBoardDemo-DrawModeSplit@540.png, ./demo/OneBoardDemo-DrawModeSplit@1080.png 2x">
+  <figcaption>Draw mode, split vertically</figcaption>
+</figure>
 
 ## Settings
 
