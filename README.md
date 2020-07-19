@@ -2,7 +2,7 @@
 
 > Full screen whiteboard with OneNote Online
 
-[![GitHub release](https://img.shields.io/github/v/release/xworld21/OneBoard?sort=semver&style=social)](https://github.com/xworld21/OneBoard/releases/) [![GitHub stars](https://img.shields.io/github/stars/xworld21/OneBoard.svg?style=social)](https://GitHub.com/xworld21/OneBoard) [![GitHub watchers](https://img.shields.io/github/watchers/xworld21/OneBoard.svg?style=social)](https://GitHub.com/xworld21/OneBoard/watchers/)
+![GitHub release](https://img.shields.io/github/v/release/xworld21/OneBoard?sort=semver&style=social) [![GitHub stars](https://img.shields.io/github/stars/xworld21/OneBoard.svg?style=social)](https://GitHub.com/xworld21/OneBoard) [![GitHub watchers](https://img.shields.io/github/watchers/xworld21/OneBoard.svg?style=social)](https://GitHub.com/xworld21/OneBoard/watchers/)
 
 This is a minimal CSS hack that transforms OneNote Online into a full screen whiteboard with laser pointer. With the "Split Vertically" bookmarklet below, you may also present OneNote as *two* sliding whiteboards.
 
