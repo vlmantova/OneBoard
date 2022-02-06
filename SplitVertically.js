@@ -1,6 +1,6 @@
 /* OneBoard - full screen whiteboard with OneNote Online
 
-Copyright (C) 2020 Vincenzo Mantova <xworld21@users.sf.net>
+Copyright (C) 2020-22 Vincenzo Mantova <v.l.mantova@leeds.ac.uk>
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by

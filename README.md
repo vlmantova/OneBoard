@@ -2,7 +2,7 @@
 
 > Full screen whiteboard with OneNote Online
 
-![GitHub release](https://img.shields.io/github/v/release/xworld21/OneBoard?sort=semver&style=social) [![GitHub stars](https://img.shields.io/github/stars/xworld21/OneBoard.svg?style=social)](https://GitHub.com/xworld21/OneBoard) [![GitHub watchers](https://img.shields.io/github/watchers/xworld21/OneBoard.svg?style=social)](https://GitHub.com/xworld21/OneBoard/watchers/)
+![GitHub release](https://img.shields.io/github/v/release/vlmantova/OneBoard?sort=semver&style=social) [![GitHub stars](https://img.shields.io/github/stars/vlmantova/OneBoard.svg?style=social)](https://GitHub.com/vlmantova/OneBoard) [![GitHub watchers](https://img.shields.io/github/watchers/vlmantova/OneBoard.svg?style=social)](https://GitHub.com/vlmantova/OneBoard/watchers/)
 
 This is a minimal CSS hack that transforms OneNote Online into a full screen whiteboard with laser pointer. With the "Split Vertically" bookmarklet below, you may also present OneNote as *two* sliding whiteboards.
 
@@ -27,13 +27,13 @@ The intended use case is to run OneBoard in "Presentation mode", while you write
 - OneNote notebooks live inside an iframe with origin `*onenote.officeapps.live.com`. The current version of this UserCSS applies to iframes from the domains `onenote.officeapps.live.com` and `${region}-onenote.officeapps.live.com` for `${region}` in `euc,ukc,usc`.
 - The settings might change shape in the future. If you are not using the defaults, you should disable automatic updates for OneBoard in Stylus.
 
-To report bugs or changes in behavior, request more servers, or suggest new functionality please file an [issue](https://github.com/xworld21/OneBoard/issues) or send a [pull request](https://github.com/xworld21/OneBoard/pulls).
+To report bugs or changes in behavior, request more servers, or suggest new functionality please file an [issue](https://github.com/vlmantova/OneBoard/issues) or send a [pull request](https://github.com/vlmantova/OneBoard/pulls).
 
 ## Installation
 
-Install the [Stylus](https://github.com/openstyles/stylus) extension for your browser (Chrome, the new Edge, Firefox, or Opera), then open the [stylesheet](https://xworld21.github.io/OneBoard/OneBoard.user.css) and click on "Install". After installation, your OneNote pages will appear in presentation mode with no navigation panel and no scrollbars.
+Install the [Stylus](https://github.com/openstyles/stylus) extension for your browser (Chrome, the new Edge, Firefox, or Opera), then open the [stylesheet](https://vlmantova.github.io/OneBoard/OneBoard.user.css) and click on "Install". After installation, your OneNote pages will appear in presentation mode with no navigation panel and no scrollbars.
 
-To have two side-by-side sliding whiteboards, drag the following link to your bookmark bar (the link is disabled when visiting the github repo – visit the <a href="https://xworld21.github.io/OneBoard">OneBoard</a> page to see the link)
+To have two side-by-side sliding whiteboards, drag the following link to your bookmark bar (the link is disabled when visiting the github repo – visit the <a href="https://vlmantova.github.io/OneBoard">OneBoard</a> page to see the link)
 
 <p align="center">
   <a style="display: block; text-align: center;" href="javascript:void%20function(){javascript:(function(){var%20b=document,c=b.title;b.head.innerHTML=b.body.innerHTML=%22%22,b.title=c;var%20e=b.createElement(%22meta%22);e.name=%22viewport%22,e.content=%22width=device-width,%20height=device-height,%20initial-scale=1%22,b.head.appendChild(e);var%20f=b.querySelector(%22html%22).style,d=b.body,a=d.style;f.width=f.height=a.width=a.height=%22100%25%22,a.margin=a.padding=%220%22;var%20g=b.createElement(%22iframe%22);a.display=%22flex%22;var%20h=g.style;g.src=window.location,h.flex=%220%200%2050%25%22,h.border=%22none%22,h.boxSizing=%22border-box%22;var%20i=g.cloneNode();h.borderRight=%22solid%202px%20black%22,i.style.borderLeft=%22solid%202px%20black%22,d.appendChild(g),d.appendChild(i)})()}();" title="Split Vertically">Split Vertically</a>
@@ -45,7 +45,7 @@ or create manually a bookmark called "Split Vertically" with the following URL:
 javascript:(function(){var e=document,i=e.title;e.head.innerHTML=e.body.innerHTML="",e.title=i;var t=e.createElement("meta");t.name="viewport",t.content="width=device-width, height=device-height, initial-scale=1",e.head.appendChild(t);var d=e.querySelector("html").style,a=e.body,l=a.style;d.width=d.height=l.width=l.height="100%",l.margin=l.padding="0";var n=e.createElement("iframe");l.display="flex";var r=n.style;n.src=window.location,r.flex="0 0 50%",r.border="none",r.boxSizing="border-box";var o=n.cloneNode();r.borderRight="solid 2px black",o.style.borderLeft="solid 2px black",a.appendChild(n),a.appendChild(o)})();
 ```
 
-Clicking on the bookmark will split the page you are browsing into two vertical copies. You can inspect the source code of the above minified Javascript in [SplitVertically.js](https://github.com/xworld21/OneBoard/SplitVertically.js).
+Clicking on the bookmark will split the page you are browsing into two vertical copies. You can inspect the source code of the above minified Javascript in [SplitVertically.js](https://github.com/vlmantova/OneBoard/SplitVertically.js).
 
 ## Usage
 
@@ -108,4 +108,4 @@ There are further options to control other elements of the UI.
 
 ## License
 
-Distributed under the [GPL3 license](https://github.com/xworld21/OneBoard/LICENSE). Copyright © 2020 Vincenzo Mantova <xworld21@users.sf.net>.
+Distributed under the [GPL3 license](https://github.com/vlmantova/OneBoard/LICENSE). Copyright © 2020-22 Vincenzo Mantova <vlmantova@leeds.ac.uk>.

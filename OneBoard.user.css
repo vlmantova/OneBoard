@@ -1,6 +1,6 @@
 /* OneBoard - full screen whiteboard with OneNote Online
 
-Copyright (C) 2020 Vincenzo Mantova <xworld21@users.sf.net>
+Copyright (C) 2020-22 Vincenzo Mantova <v.l.mantova@leeds.ac.uk>
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -19,13 +19,13 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 /* ==UserStyle==
 @name           OneBoard
-@namespace      github.com/xworld21
-@version        0.3.1
+@namespace      github.com/vlmantova
+@version        0.3.2
 @description    Whiteboard skin for OneNote Online
-@author         Vincenzo Mantova <xworld21@users.sf.net>
-@homepageURL    https://xworld21.github.io/OneBoard
-@supportURL     https://github.com/xworld21/OneBoard/issues
-@updateURL      https://xworld21.github.io/OneBoard/OneBoard.user.css
+@author         Vincenzo Mantova <v.l.mantova@leeds.ac.uk>
+@homepageURL    https://vlmantova.github.io/OneBoard
+@supportURL     https://github.com/vlmantova/OneBoard/issues
+@updateURL      https://vlmantova.github.io/OneBoard/OneBoard.user.css
 @license        MIT
 @preprocessor   stylus
 @var select mode "Mode" [ "presentation:Presentation", "draw:Draw", "type:Type", "normal:Normal" ]
