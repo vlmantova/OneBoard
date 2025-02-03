@@ -76,7 +76,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
        handles */
     .OutlineTitleArea,
     .ShowDragHandle {
-      display: none;
+      display: none !important;
     }
 
     /* Hide the insertion caret */
