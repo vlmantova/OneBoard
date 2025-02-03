@@ -31,6 +31,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 @var select mode "Mode" [ "presentation:Presentation", "draw:Draw", "type:Type", "normal:Normal" ]
 @var checkbox hide-navigation "Hide navigation panel" 1
 @var checkbox hide-scrollbars "Hide scrollbars" 1
+@var checkbox hide-background "Hide background" 1
 @var range laser-size "Laser pointer size" [16, 4, 64, 4]
 @var checkbox prevent-scroll-x "Prevent horizontal scrolling (read warning)" 0
 ==/UserStyle== */
@@ -46,7 +47,8 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     }
   }
 
-  if mode == presentation {
+  if mode==presentation {
+
     /* Hide the ribbon */
     #WACRibbonPanel {
       /* Ribbon still visible if missing !important */
@@ -60,8 +62,9 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
       user-select: none;
     }
   }
-  
-  if mode == presentation or mode == draw {
+
+  if mode==presentation or mode==draw {
+
     /* Hide the border around note containers that appears on selection and
        hover */
     .ContentSelected,
@@ -87,6 +90,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     .Selected p * {
       background-color: transparent !important;
     }
+
     .Selected .EOP,
     .EOP.Selected,
     .LineBreakBlob.Selected,
@@ -102,20 +106,28 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     }
   }
 
-  if mode == presentation or mode == draw or mode == type {
+  if mode==presentation or mode==draw or mode==type {
     #WACRibbonPanel div[data-automation-type="RibbonTopBarContainer"] {
       display: none !important;
     }
   }
 
   if hide-scrollbars {
+
     /* WebKit browsers */
     #WACViewPanel::-webkit-scrollbar {
       display: none;
     }
+
     /* Firefox */
     #WACViewPanel {
       scrollbar-width: none;
+    }
+  }
+
+  if hide-background {
+    #WACViewPanel {
+      background: #fff !important;
     }
   }
 
